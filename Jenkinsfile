@@ -1,5 +1,9 @@
 pipeline {
    agent any
+   environment {
+         PATH = "/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/apache-maven/bin"
+         M2_HOME = "/opt/apache-maven"
+   }
    stages {
        stage('Clean') {
            steps {
