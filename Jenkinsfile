@@ -27,7 +27,7 @@ pipeline {
           steps {
              echo 'Deploy..'
 		sh 'ssh root@192.168.33.11"rpm -e"'
-		sh 'scp /root/calutfericit/target/rpm/unixutils-test-rpm/RPMS/noarch/unixutils-test-rpm-1.0.0-1.0.0.noarch.rpm root@192.168.33.11:/'
+		sh 'scp /root/sebi69/target/rpm/unixutils-test-rpm/RPMS/noarch/unixutils-test-rpm-1.0.0-1.0.0.noarch.rpm root@192.168.33.11:/'
 		sh 'ssh root@192.168.33.11"rpm -ivh"'
              }
        }
